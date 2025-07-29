@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -11,6 +17,35 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+  margin-right: 332px;
 }
 
 .logo-header {
@@ -46,6 +81,12 @@ body {
 
 .address {
   font-style: normal;
+  padding: 24px 0;
+}
+
+.address ul {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -61,6 +102,15 @@ body {
 
 .section-one {
   background-color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-one h1 {
+  margin: auto;
+  margin-bottom: 48px;
+  max-width: 496px;
+  text-align: center;
 }
 
 .title {
@@ -72,6 +122,11 @@ body {
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -85,13 +140,30 @@ body {
   background-color: #404bbf;
 }
 
-.value-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.value-section {
+  padding: 120px 0;
+}
+
+.value-section ul {
+  display: flex;
+  gap: 24px;
+}
+
+.value-section li {
+  width: calc((100% - 72px) / 4); /* 3 проміжки по 24px */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .value-title-list {
@@ -100,6 +172,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .value-text {
@@ -111,6 +184,7 @@ body {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -120,10 +194,20 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .team-list {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
 .team-list-title {
@@ -132,6 +216,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -141,6 +227,10 @@ body {
   color: #434455;
 }
 
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -148,10 +238,21 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 360px;
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
 .portfolio-list-title {
@@ -160,6 +261,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.portfolio-item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-text {
@@ -171,15 +279,28 @@ body {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+  border-top: 1px solid #e7e9fc;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 264px;
+  margin-left: 156px;
 }
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-left: 24px;
 }
 
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -187,6 +308,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .span-footer {
