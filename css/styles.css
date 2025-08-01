@@ -308,14 +308,6 @@ img {
   border-top: 1px solid #e7e9fc;
 }
 
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 264px;
-  margin-left: 156px;
-}
-
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
