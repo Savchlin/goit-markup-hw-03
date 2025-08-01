@@ -94,9 +94,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.address-list {
   display: flex;
   gap: 40px;
+  padding: 0;
+  margin: 0;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
@@ -318,11 +324,8 @@ img {
   max-width: 264px;
 }
 
-.footer .logo-footer {
-  display: inline-block;
-}
-
 .logo-footer {
+  display: inline-block;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
@@ -331,7 +334,6 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: #4d5ae5;
-  margin-bottom: 16px;
 }
 
 .span-footer {
